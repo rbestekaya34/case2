@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+
+}
+
+body {
+   
+    margin: 0;
+    padding: 0;
+ 
+    display: flex; /* Flexbox kullanarak merkezi konumlandırma */
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+}
+
+.container {
+    width: 100%;        
+       /* Genişlik %100 olacak */
+    max-width: 1092px;     
+    margin: 16px;   
+    border-radius: 8px;
+    padding: 22px;
+    background-color: white;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    overflow: hidden;
+    background-color: #EEF3F8;
+
+    
+   
+}
+.Header{
+    margin-top:-20px;
+    gap: 12px;
+       display: flex; /* Flexbox etkinleştir */
+    justify-content: center; /* Yatay ortalama */
+    align-items: center; /* Dikey ortalama */
+
+    margin-right: auto;
+    display: flex;
+}
+.Header h2{
+    font-weight: 600;
+    font-size:25px;
+    color: #FFA300;
+  
+    
+ 
+
+}
+.card{
+   
+    border-radius: 8px;
+    border: 1px solid #E8ECF2;
+    padding: 24px;
+    gap:24px;
+    box-shadow: 0px 0px 12px 0px #53608A1A;
+    background-color: #FFFFFF;
+ 
+    display: flex;
+
+   
+
+}
+.card-content{
+  
+    display:flex;
+    justify-content: space-between;
+    gap:16px;
+    flex-direction: column;
+
+}
+
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:16px;
+    margin-top: -20px
+
+}
+.header h3{
+    font-weight: 600;
+    font-size:25px;
+    color: #486072;
+    
+
+}
+.header span{
+    font-weight: 400;
+    font-size:16px;
+    color: #486072;
+
+}
+.content-text {
+ 
+    font-weight: 400;
+    font-size:16px;
+    color:#486072;
+    margin-top: -40px;
+    line-height: 24px;
+   
+
+}    
+  
+
+
+.card-footer{
+    display: flex;
+    justify-content: flex-end;
+   
+  
+  
+}
+.card-footer button{
+   
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size:16px;
+    color: #486072;
+    display: flex;
+    gap:10px;
+    
+    outline: none;  
+    margin-top:10px; 
+    margin-left:10px;
+    
+}
+.card-footer img{
+    width:24px;
+    height: 24px;
+    margin-top:10px;
+   
+}
+
+.cards {
+    display: flex;
+    
+    gap: 24px; /* Kartlar arasında boşluk */
+  }
+  
+  .card-container {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+   
+    gap: 16px;
+   
+    border-radius: 8px;
+    border: 1px solid #E8ECF2;
+    box-shadow: 0px 0px 12px 0px #53608A1A;
+    flex: 0 0 calc(33.33% - 16px); /* Her bir kartın genişliği 3 eşit kolona bölünecek şekilde ayarlandı */
+    
+  }
+  .card-1{
+    padding:24px;
+   
+    
+
+    
+
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top:-20px;
+    margin-bottom: 8px;
+     
+  }
+  
+  .content-text-1 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #486072;
+    margin-top: -20px;
+  }
+  
+  .header-1 {
+    display: flex;
+    margin-top:-20px;
+    gap:16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-1 h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #486072;
+  }
+  
+  .header-1 span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #486072;
+}
+
+.button{
+    width:320px;
+    display:flex;
+    justify-content: center;
+    border-radius:8px;
+    align-items:center;
+    gap:10px;
+    text-align:center;
+    padding:8px 16px 8px 16px;
+    opacity: 0.6;
+    background-color:  #688090;
+    font-weight:600;
+    font-size:16px;
+    color: #FFFFFF;
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width:100%;
+        max-width: 368px;
+    }
+   
+
+    .header h2 {
+        font-size: 20px;  /* Mobilde biraz daha küçük font */
+        white-space: nowrap;  /* Alt satıra geçmesini engelle */
+        margin-right:200px;
+    }
+    .card{
+        display:none;
+    }
+    .cards .card-container:nth-child(1),
+    .cards .card-container:nth-child(3) {
+        display: none;
+    }
+    .button{
+        width:350px;
+        background: linear-gradient(93.15deg, #B3C2D4 -17.43%, #173A47 103.97%);
+        gap:10px;
+        margin-top: -40px;
+    }
+    .header-1 h3{
+        font-size: 20px;
+    }
+}
